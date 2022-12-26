@@ -1,0 +1,25 @@
+BASE_TASK_CONFIG_PATH: habitat_extensions/config/vlnce_task.yaml
+SIMULATOR_GPU_ID: 0
+TORCH_GPU_ID: 0
+NUM_PROCESSES: 5
+TENSORBOARD_DIR: data/tensorboard_dirs/cma_aug_da_tune
+CHECKPOINT_FOLDER: data/checkpoints/cma_aug_da_tune
+EVAL_CKPT_PATH_DIR: data/checkpoints/cma_aug_da_tune
+
+SENSORS: ['RGB_SENSOR', 'DEPTH_SENSOR']
+
+EVAL:
+  USE_CKPT_CONFIG: False
+  SPLIT: val_unseen
+  EPISODE_COUNT: 50000
+
+DAGGER:
+  ITERATIONS: 10
+  EPOCHS: 4
+  UPDATE_SIZE: 5000
+  BATCH_SIZE: 8
+  P: 0.5
+  PRELOAD_LMDB_FEATURES: False
+  LMDB_FEATURES_DIR: /mnt/cephfs/dataset/VLN-CE/result/jidongyu/_train_seen_data/trajectories.lmdb
+  LOAD_FROM_CKPT: True
+  CKPT_TO_LOAD: /mnt/cephfs/dataset/VLN-CE/result/jidongyu/_exp_4/IL_RgbMap_Step3_SegPred-Alpha0.1_KlLoss-Tau0.07_DataAug/run_train_base/checkpoint/ckpt.12.pth
