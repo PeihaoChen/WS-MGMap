@@ -5,7 +5,7 @@ Official Pytorch implementation for NeurIPS 2022 paper "Weakly-Supervised Multi-
 
 
 ## Setup
-This code is developed with Python 3.6, PyTorch 1.6.0. We follow [VLN-CE](https://github.com/jacobkrantz/VLN-CE) to install Habitat-Sim and Habitat-Lab. Then clone this repository and install requirements. (More details in install.md)
+This code is developed with Python 3.6, PyTorch 1.6.0. We follow [VLN-CE](https://github.com/jacobkrantz/VLN-CE) to install Habitat-Sim and Habitat-Lab. Then clone this repository and install requirements. (More details in setup.md)
 
 ```bash
 git clone https://github.com/PeihaoChen/WS-MGMap.git
