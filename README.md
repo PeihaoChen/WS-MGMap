@@ -5,7 +5,7 @@ Official Pytorch implementation for NeurIPS 2022 paper "Weakly-Supervised Multi-
 
 
 ## Setup
-This code is developed with Python 3.6, PyTorch 1.6.0. We follow [VLN-CE](https://github.com/jacobkrantz/VLN-CE) to install Habitat-Sim and Habitat-Lab. Then clone this repository and install requirements. (More details in setup.md)
+This code is developed with Python 3.6, PyTorch 1.6.0. We follow [VLN-CE](https://github.com/jacobkrantz/VLN-CE) to install Habitat-Sim and Habitat-Lab. Then clone this repository and install requirements. (More details in SETUP.md)
 
 ```bash
 git clone https://github.com/PeihaoChen/WS-MGMap.git
@@ -23,7 +23,7 @@ Follow the instructions in [VLN-CE](https://github.com/jacobkrantz/VLN-CE) to do
 Download the cache ground-truth semantic map [here](https://drive.google.com/file/d/1pJwx0E95WsJXThcx8tPrUTB_6gTlryoy/view?usp=share_link) to `data/map_data` folder as the supervision for the semantic hallucination.
 
 ### Download Pre-Trained Model
-The pre-trained semantic segmentation model for the semantic segmentation and DD-PPO model for the navigation control can be found [here](https://drive.google.com/file/d/1h7va7waqruCrAxppX4VDhw8mkxfqU1_q/view?usp=share_link). Download it to `data/pretrain_model` folder
+The pre-trained semantic segmentation model for the semantic segmentation and DD-PPO model for the navigation control can be found [here](https://drive.google.com/file/d/1DYkXbRIBVgMU1qHF_mLT41esSAdcQJaf/view?usp=sharing). Download it to `data/pretrain_model` folder
 
 ### Data Format
 This code expects all data files in the following structure:
