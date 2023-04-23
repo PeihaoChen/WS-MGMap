@@ -79,7 +79,7 @@ cd map_data/semantic/train
 find . -name '*.tar.gz' -print0 | xargs -0 -I {} -P 10 tar -zvxf {}
 
 # Unzip all train_aug files
-cd ../train_aug
+cd ../train_aug 
 find . -name '*.tar.gz' -print0 | xargs -0 -I {} -P 10 tar -zvxf {}
 ```
 
